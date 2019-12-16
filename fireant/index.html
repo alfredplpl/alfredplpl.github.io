@@ -8,7 +8,7 @@
     <meta name="description" content="upload image.">
     <meta name="author" content="alfredplpl">
 
-    <title>ヒアリ画像判定サービス（仮）</title>
+    <title>ヒアリ画像判定サービス</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,11 +46,16 @@
   <br>
   
 	<div class="container theme-showcase" role="main">
-	<div class="jumbotron">
-			<h1>そのアリ画像、ヒアリですか？</h1>
-		<p>話題のディープラーニングがお調べ致します。</p>
-	</div>
-    <p>残念ながら現在は使えません。</p>
+    <div class="jumbotron">
+        <h1>そのアリ、ヒアリですか？</h1>
+      <p>話題のAutoMLがお調べ致します。</p>
+    </div>
+
+      <form action="https://us-central1-fireantrecognition.cloudfunctions.net/FireAntRecognition" method="POST" enctype = multipart/form-data>
+        <input type="file" name="image" size="16" value=""/>
+        <input type="submit" value="送信"/>
+      </form>
+
   	<h3>お試し用画像</h3>
 	  	<p>リンク先の画像を保存して本サービスをお試しください</p>
 	  	<a href="img/fireant.jpg">ヒアリ画像</a><br>
@@ -73,11 +78,7 @@
       <li>このサイトにおけるヒアリ(fire ant)とは主にRed Imported Fire AntとEuropian Fire Antのことをさします。
       Fire antには200種類以上<sup><a href="#fn1" id="ref1">1</a></sup>存在し、その全てに対応することは
       困難と判断しました。ご了承ください。</li>
-      <li>判定するために送信された画像は以下の理由によって保存されます。あらかじめご了承ください。</li>
-      <ul>
-        <li>判定結果を表示するため</li>
-        <li>ヒアリ判定機の精度を向上させるため</li>
-      </ul>
+      <li>判定するために送信された画像は外部記憶装置に保存されることはありません。</li>
     </ul>
 
 		<h3>更新履歴</h3>
