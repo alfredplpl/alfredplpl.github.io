@@ -50,7 +50,9 @@
         <h1>そのアリ、ヒアリですか？</h1>
       <p>話題のAutoMLがお調べ致します。</p>
     </div>
-
+    <p>
+      お詫び：どうも画像サイズが大きすぎるとエラーを吐き出すようです。スマホから写真を送信する場合はサイズを小さくしてアップロードしてください。
+    </p>
       <form action="https://us-central1-fireantrecognition.cloudfunctions.net/FireAntRecognition" method="POST" enctype = multipart/form-data>
         <input type="file" name="image" size="16" value="" accept="image/jpeg"/>
         <input type="submit" value="送信"/>
@@ -64,7 +66,7 @@
       <a href="img/arigumo.jpg">ヒアリっぽいクモ画像</a> (c) OpenCage (CC BY-SA 2.5)<br>
       <h3>サービスの中身</h3>
 	<p>ヒアリ判定サービスの中身を公開しました。プログラムやアルゴリズム自体はほぼ公開されています。ただし、データセットなど著作権などの問題で公開できないものは公開してありません。ご参考まで。</p>
-	<a href="https://github.com/alfredplpl/FireAntRecognitionService">GitHubへ</a>
+	<a href="https://github.com/alfredplpl/FireAntRecognitionGCP">GitHubへ</a>
 		<h3>免責事項</h3>
 		<ul>
 			<li>あくまで簡易判定機です。本当にヒアリの画像かどうかを調べたい場合は専門家に問い合わせてください。</li>
@@ -83,6 +85,7 @@
 
 		<h3>更新履歴</h3>
 		<ul>
+      <li>2019/10/16 判定機をAutoMLに変更し、判定の性能を大幅に向上させました（平均適合率97%）</li>
       <li>2019/08/18 Github Pagesにお引越ししました。</li>
 		  <li>2017/07/23 お試し用画像を誤認識する不具合をなくし、認識性能を上げました。</li>
       <li>2017/07/20 脅威に対して大幅に強化するため、ネットワーク構造を変更しました。</li>
@@ -106,7 +109,7 @@
     <hr>
 
     <footer>
-      <p>&copy; 2017 Alfred Increment (alfredplpl) powered by Bootstrap.</p>
+      <p>&copy; 2017-2019 Alfred Increment (alfredplpl) powered by Bootstrap.</p>
     </footer>
 	</div>
   	</body>
