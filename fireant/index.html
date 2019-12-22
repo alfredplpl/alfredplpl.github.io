@@ -56,8 +56,14 @@
       よろしくお願い申し上げます。
     </p>
 
-    <form>
-      <input id="imgFile type="file" name="image" size="16" value="" accept="image/jpeg"/>
+    <script type='text/javascript'>
+      function notify() {
+        alart("現在はサービスは一時停止しております。")
+        return false
+      }
+    </script>
+    <form onsubmit="return notify()" >
+      <input id="imgFile"type="file" name="image" size="16" value="" accept="image/jpeg"/>
       <input type="submit" value="送信"/> 
     </form>
 
