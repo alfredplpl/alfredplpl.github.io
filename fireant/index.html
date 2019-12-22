@@ -51,20 +51,14 @@
       <p>話題のAutoMLがお調べ致します。</p>
     </div>
     <p>
-      お詫び：現在、AutoML Visionを個人で運営するにはコストが半端ないため、一時サービス提供を停止しています。
+      お詫び：現在、<b>AutoML Visionを個人で運用するにはコストが半端ない</b> ため、一時サービス提供を停止しています。
       現在、サービスを作り直しているため、しばらくお待ち下さいますよう
       よろしくお願い申し上げます。
     </p>
 
-    <script type='text/javascript'>
-      function notify() {
-        alart("現在はサービスは一時停止しております。")
-        return false
-      }
-    </script>
-    <form onsubmit="return notify()" >
+    <form method="POST" enctype = multipart/form-data>
       <input id="imgFile"type="file" name="image" size="16" value="" accept="image/jpeg"/>
-      <input type="submit" value="送信"/> 
+      <input type="submit" value="判定"  disabled="disabled" /> 
     </form>
 
 
