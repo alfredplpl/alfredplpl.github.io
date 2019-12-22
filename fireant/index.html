@@ -64,14 +64,13 @@
           reader.onload = onImageLoad;
           reader.readAsDataURL(imgFile);
 
-          // 画像データの縦横サイズを取得する
           var image = document.createElement('img');
           image.src = data;
           var width = image.naturalWidth;
           var height = image.naturalHeight;
           alert( "a" );
           /*  
-          // 縮小する。今回は縦横それぞれ1/2
+          // 縮小する。
           var canvas = document.createElement('canvas');
           canvas.width = width / 2;
           canvas.height = height / 2;
@@ -83,7 +82,7 @@
       }
     </script>
   -->
-  
+
     <form onsubmit="resize()" >
       <input id="imgFile type="file" name="image" size="16" value="" accept="image/jpeg"/>
       <input type="submit" value="送信"/> 
