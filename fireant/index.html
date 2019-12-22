@@ -51,15 +51,19 @@
       <p>話題のAutoMLがお調べ致します。</p>
     </div>
     <p>
-      お詫び：どうも画像サイズが大きすぎるとエラーを吐き出すようです。スマホから写真を送信する場合はサイズを小さくしてアップロードしてください。
+      お詫び：現在、<b>AutoML Visionを個人で運用するにはコストが半端ない</b> ため、一時サービス提供を停止しています。
+      現在、サービスを作り直しているため、しばらくお待ち下さいますよう
+      よろしくお願い申し上げます。
     </p>
-      <form action="https://us-central1-fireantrecognition.cloudfunctions.net/FireAntRecognition" method="POST" enctype = multipart/form-data>
-        <input type="file" name="image" size="16" value="" accept="image/jpeg"/>
-        <input type="submit" value="送信"/>
-      </form>
+
+    <form method="POST" enctype = multipart/form-data>
+      <input id="imgFile"type="file" name="image" size="16" value="" accept="image/jpeg"/>
+      <input type="submit" value="判定"  disabled="disabled" /> 
+    </form>
+
 
   	<h3>お試し用画像</h3>
-	  	<p>リンク先の画像を保存して本サービスをお試しください</p>
+      <p>リンク先の画像を保存して本サービスをお試しください</p>
 	  	<a href="img/fireant.jpg">ヒアリ画像</a><br>
 	  	<a href="img/tigerant.jpg">ヒアリではないアリ画像</a><br>
       <a href="img/ameiro.jpg">ヒアリっぽいアリ画像</a> from www.AntWeb.org (CC BY 4.0)<br>
