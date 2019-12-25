@@ -54,7 +54,7 @@
     <!-- https://asia-northeast1-fireantrecognition.cloudfunctions.net/FireAntRecognition -->
     
     <p>判定には20秒程度かかる場合があります。サーバレスで、かつCPUにDNNで判定させているためです。</p>
-    <form method="POST" action="http://127.0.0.1:8000/" enctype = "multipart/form-data">
+    <form method="POST" action="https://asia-northeast1-fireantrecognition.cloudfunctions.net/FireAntRecognition" enctype = "multipart/form-data">
       <input id="imgFile" type="file" name="image" size="16" value="" accept="image/jpeg"/>
       <input type="submit" value="送信して判定"/> 
     </form>
