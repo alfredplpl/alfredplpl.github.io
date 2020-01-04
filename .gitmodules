@@ -1,0 +1,3 @@
+[submodule "web-jjy"]
+	path = web-jjy
+	url = https://github.com/alfredplpl/web-jjy
