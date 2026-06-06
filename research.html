@@ -8,7 +8,7 @@
     <meta name="description" content="Alfred Incrementのまとめサイト">
     <meta name="author" content="alfredplpl">
 
-    <title>プロフィール</title>
+    <title>研究活動</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,6 +36,28 @@
         left:0;
         width:100%;
         height:100%;
+      }
+      .section {
+        margin-top: 36px;
+      }
+      .section h2 {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+      }
+      .overview-list {
+        padding-left: 20px;
+      }
+      .overview-list li {
+        margin-bottom: 6px;
+      }
+      .research-axis {
+        margin: 18px 0 8px;
+      }
+      .research-axis dt {
+        margin-top: 10px;
+      }
+      .project-block {
+        margin-top: 26px;
       }
     -->
     </STYLE>
@@ -69,19 +91,31 @@
         <p>
           生成AIと人間・ロボットインタラクションを中心に、人の創作や行動を理解し、実世界のサービスやプロダクトにつなげる研究開発に取り組んでいます。
         </p>
+        <ul class="overview-list">
+          <li><a href="#research-topics">研究テーマ</a>: 生成AI、動画生成AI、人間・ロボットインタラクション</li>
+          <li><a href="#implementation">実用化・助成</a>: 公開モデル、サービス、研究助成</li>
+          <li><a href="#publications">発表文献</a>: ジャーナル、査読付き会議、その他の文献</li>
+          <li><a href="#activities">学術・公益・広報活動</a>: 査読、講演、メディア掲載、特許</li>
+        </ul>
       </div>
               
-          
-        <h2>研究内容</h2>  
-        <div>
-            作風を模倣する画像生成AIに関する研究開発を行っております。
-            画像だけではなく、動画生成AIも開発しております。
-            また、各種センサーから得られた情報から得られた情報を基に人の状態を推定し、
-            その人の状態に合わせて行動することで、
-            実世界の人間と人間らしくインタラクションするロボットも開発しています。
-        </div>
+        <div class="section" id="research-topics">
+        <h2>研究テーマ</h2>
+        <p>
+          近年は、生成AIを創作やプロダクトに接続する研究開発に重点を置いています。
+          その前提として、特定の作風を模倣する生成AIの技術面と倫理面、日本語圏のクリエイターが使いやすい動画生成AI、実世界で人と自然に関わるロボットの研究に取り組んできました。
+        </p>
+        <dl class="research-axis">
+          <dt>生成AIと創作</dt>
+          <dd>作風模倣、透明性、クリエイターへの利益還元、社会的受容性を扱います。</dd>
+          <dt>動画生成AI</dt>
+          <dd>日本語入力、効率的な基盤モデル、公開モデル、サービス化までを扱います。</dd>
+          <dt>人間・ロボットインタラクション</dt>
+          <dd>通行者の状態推定、対話開始、呼びかけの不快感低減を扱います。</dd>
+        </dl>
 
-        <h3>特定の作風を模倣する画像・動画生成AIの技術面と倫理面の研究 [16, 17]</h3>  
+        <div class="project-block">
+        <h3>特定の作風を模倣する画像・動画生成AIの技術面と倫理面の研究 [16, 17]</h3>
         <div class="row">
           <div class="col-xs-0 col-md-4 col-lg-3"></div>
           <div class="col-xs-12 col-md-6 col-lg-6"> 
@@ -98,7 +132,9 @@
             現在も倫理的な研究を進めています。
           </div>
         </div>
+        </div>
 
+        <div class="project-block">
         <h3>日本語入力にネイティブ対応した動画生成AIの研究開発 [19]</h3>
         <div class="row">
           <div class="col-xs-0 col-md-4 col-lg-3"></div>
@@ -122,7 +158,10 @@
             基盤モデルの開発からプロダクト化まで一貫して取り組んでいます。
           </div>
         </div>
-        <h3>空気を読むロボット -ロボット展示員は通行人に不快感を与えず、こちらに興味を引かせられるのか？- [12]</h3>  
+        </div>
+
+        <div class="project-block">
+        <h3>空気を読むロボット -ロボット展示員は通行人に不快感を与えず、こちらに興味を引かせられるのか？- [12]</h3>
         <div class="row">
           <div class="col-xs-0 col-md-4 col-lg-3"></div>
           <div class="col-xs-12 col-md-6 col-lg-6"> 
@@ -156,7 +195,9 @@
             オフィスのエントランスというフィールドでの実験の結果、本手法がこの要求を満たすことが実証されました。
           </div>
         </div>
+        </div>
 
+        <div class="project-block">
         <h3>通行者の行動モデルに基づいてサービス利用を予測するシステム[9][10]</h3>
         <div class="row">
           <div class="col-xs-0 col-md-2 col-lg-2"> 
@@ -176,7 +217,9 @@
             検証実験の結果、統制された環境では、利用意志をすべて正確に予測でき、実環境に基づいたシミュレーションでは他の手法に比べ高い精度で利用意志を予測できることが統計的にわかりました。また、この手法に基づいて、利用意志があると推定される歩行者に音声で呼びかけた結果、他の手法に比べ、不快感を与えにくい特徴があることが新たにわかりました。
           </div>
         </div>
+        </div>
         
+        <div class="project-block">
         <h3>通行者の行動モデルに基づいてサービス利用を促すバーチャルエージェント[2][8]</h3>
         <div class="row">
           <div class="col-xs-3 col-md-2 col-lg-1"> 
@@ -190,10 +233,31 @@
             エージェントとインタラクションする通行者の割合は多くなる傾向が見られました。
           </div>
         </div>
+        </div>
+        </div>
 
-        <hr>
-        <h2>発表文献</h2> 
-        <h3>ジャーナル/論文誌</h3> 
+        <div class="section" id="implementation">
+        <h2>実用化・助成</h2>
+        <h3>研究開発の実用化</h3>
+        <ul>
+          <li><a href="https://huggingface.co/aidealab/AIdeaLab-VideoJP">AIdeaLab VideoJP</a></li>
+          <li><a href="https://huggingface.co/aidealab/AIdeaLab-VideoMoE-7B-A2B">AIdeaLab VideoMoE</a></li>
+          <li><a href="https://animegen.jp/">AnimeGen</a></li>
+          <li><a href="https://aisozai.com/irasutoya">AIいらすとや</a></li>
+          <li><a href="https://aisozai.com/loosedrawing">Loose AI</a></li>
+        </ul>
+
+        <h3>研究助成</h3>
+        <h4>代表</h4>
+        <ul>
+          <li>NEDO GENIAC, "時空間MoEを用いた動画生成AI基盤モデルの研究開発と当該プラットフォームの満足度検証", 2026, <a href="https://www.meti.go.jp/policy/mono_info_service/geniac/selection_3/index.html">link</a></li>
+          <li>NEDO GENIAC, "動画生成AI基盤モデルと動画生成AIプラットフォームの開発", 2025, <a href="https://www.meti.go.jp/policy/mono_info_service/geniac/selection_2/index.html">link</a></li>
+        </ul>
+        </div>
+
+        <div class="section" id="publications">
+        <h2>発表文献</h2>
+        <h3>ジャーナル/論文誌</h3>
         <ul>
           <li>[15] Yuki Okafuji, Yasunori Ozaki, Jun Baba, Junya Nakanishi, Kohei Ogawa, Yuichiro Yoshikawa, Hiroshi Ishiguro, “Behavioral assessment of a humanoid robot when attracting pedestrians in a mall,” International Journal of Social Robotics, 2022 (preprint: <a href="https://arxiv.org/abs/2109.02771">arXiv</a>) </li>
           <li>[3] Yusuke Sugano, Yasunori Ozaki, Hiroshi Kasai, Keisuke Ogaki and Yoichi Sato, "Image Preference Estimation with a Data-driven Approach: A Comparative Study between Gaze and Image Features," Journal of Eye Movement Research, vol. 7, num. 3, 2014.</li>
@@ -208,7 +272,7 @@
           <li>[11] 矢野裕季, 東風上奏絵, 中野将尚, 尾崎安範, 佐藤大貴, 倉橋孝雄, 越地弘順,肥後直樹, 椿俊光, 布引純史(NTT), "電動車椅子のための実環境における歩行者回避領域の評価手法", 第24回ロボティクスシンポジア, pp.299-300, 2019</li>
         </ul>
 
-        <h3>その他の文献</h3> 
+        <h3>その他の文献</h3>
         <ul>
           <li>[19] 尾崎安範，石原昌文，富平準喜, "日本語入力にネイティブ対応したテキストからの動画生成のフルスクラッチ開発と公開", Jxiv, 2025 (<a href="https://jxiv.jst.go.jp/index.php/jxiv/preprint/view/1248">Jxiv</a>)</li>
           <li>[18] 尾崎安範，三嶋隆史，富平準喜, "CommonArt ～ 国産大規模言語モデルによる透明性の高い画像生成用拡散トランスフォーマー ～", PRMU, 2024 (<a href="https://jxiv.jst.go.jp/index.php/jxiv/preprint/view/936">Jxiv</a>)</li>
@@ -223,36 +287,24 @@
           <li>(ネタ論文ですが、査読付きで採択率は約30%でした。投稿者はほぼ東大生でした。)</li>
           <li>[1] 尾崎安範, 出口大輔, 高橋友和, 井手一郎, 村瀬 洋, "印象に基づく属性による顔画像の検索に関する検討," 電子情報通信学会 総合大会, 2012 </li>
         </ul>
+        </div>
 
-        <h2>研究開発の実用化</h2>
-        <ul>
-          <li><a href="https://huggingface.co/aidealab/AIdeaLab-VideoJP">AIdeaLab VideoJP</a></li>
-          <li><a href="https://huggingface.co/aidealab/AIdeaLab-VideoMoE-7B-A2B">AIdeaLab VideoMoE</a></li>
-          <li><a href="https://animegen.jp/">AnimeGen</a></li>
-          <li><a href="https://aisozai.com/irasutoya">AIいらすとや</a></li>
-          <li><a href="https://aisozai.com/loosedrawing">Loose AI</a></li>
-        </ul>
-
-        <h2>学術的活動</h2> 
+        <div class="section" id="activities">
+        <h2>学術・公益・広報活動</h2>
+        <h3>学術的活動</h3>
         <ul>
           <li>座長経験: AVIC 2021 Session Chair</li>
           <li>査読経験: MIRU 2025, MIRU 2024, MIRU 2023, MIRU 2022 (査読賞), ICPR 2022, HAI 2021, 電気学会 論文誌</li>
           <li>招待講演: <a href="https://www.docswell.com/s/alfredplpl/KJLQ9N-2023-07-23-165655">エンタテイメント情報学 2023（福知山公立大学）</a>, <a href="https://www.docswell.com/s/alfredplpl/KL643Z-2022-07-19-172629">信号とシステム 2022（阪大）</a> </li>
         </ul>
-        <h2>研究助成</h2> 
-        <h3>代表</h3>
-        <ul>
-          <li>NEDO GENIAC, "時空間MoEを用いた動画生成AI基盤モデルの研究開発と当該プラットフォームの満足度検証", 2026, <a href="https://www.meti.go.jp/policy/mono_info_service/geniac/selection_3/index.html">link</a></li>
-          <li>NEDO GENIAC, "動画生成AI基盤モデルと動画生成AIプラットフォームの開発", 2025, <a href="https://www.meti.go.jp/policy/mono_info_service/geniac/selection_2/index.html">link</a></li>
-        </ul>
 
-        <h2>公益的活動</h2> 
+        <h3>公益的活動</h3>
         <ul>
           <li>"AI時代の知的財産権検討会（第２回）", 内閣府, 2023, <a target=”_blank” href="https://www.kantei.go.jp/jp/singi/titeki2/ai_kentoukai/gijisidai/dai2/index.html">内閣府のサイトへ</a></li>
         </ul>
 
-        <h2>広報活動</h2>
-        <h3>メディア掲載</h3>
+        <h3>広報活動</h3>
+        <h4>メディア掲載</h4>
           <ol>
             <li>"日本発のアニメ生成AI「AnimeGen」無料ベータテスト開始", ASCII, 2025 <a target=”_blank” href="https://ascii.jp/elem/000/004/323/4323916/">ASCIIのサイトへ</a></li>
             <li>"日本初の日本語対応の動画生成AI基盤モデル「AIdeaLab VideoJP」無償公開！　商用利用可、ライセンスに考慮しゼロから動画学習", CGWORLD, 2025, <a target=”_blank” href="https://cgworld.jp/flashnews/202502-AIdeaLab-VideoJP.html">CGWORLDのサイトへ</a></li>
@@ -268,7 +320,7 @@
               <li>補足: パワードスーツのくだりが私の担当になります。</li>
             </ul>
           </ol>
-        <h3>プレスリリース</h3>
+        <h4>プレスリリース</h4>
           <ol>
             <li>"AI Lab、ロボティクス分野の主要ジャーナル「International Journal of Social Robotics」にて論文採択 ー 自律声掛けロボットにおける対話開始手法を検討 ー", サイバーエージェント, 
               <a target=”_blank” href="https://www.cyberagent.co.jp/news/detail/id=27780">サイバーエージェントのページへ</a></li>
@@ -276,7 +328,7 @@
               <a target=”_blank” href="https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000474460.html">大阪市のページへ</a></li>
           </ol>
 
-        <h2>公開された特許</h2>
+        <h3>公開された特許</h3>
         <ul>
           <li>[特許9] 尾崎  安範 他, "情報出力装置、方法およびプログラム", 特開2020-24517</li>     
           <li>[特許8] 尾崎  安範 他, "情報出力装置、方法およびプログラム", 特開2019-128910</li>
@@ -288,7 +340,9 @@
           <li>[特許2] 尾崎  安範 他, "力感フィードバック装置", 特開2018-020002</li>
           <li>[特許1] 杉山  弘晃, 目黒  豊美, 大和  淳司, 山田  智広, 望月  崇由, 松元  崇裕, 尾崎  安範, 吉川  雄一郎, 石黒  浩,  "対話方法、対話システム、対話装置、およびプログラム", 特開2017-207693</li>
         </ul>
+        </div>
 
+        <div class="section" id="portfolio">
         <h2>ポートフォリオ</h2>
         <p>学生時代や社会人で作成した主な作品の概要をスライドにまとめました。</p>
         <div class="row">
@@ -300,11 +354,14 @@
           </div>
           <div class="col-xs-0 col-md-2 col-lg-2"> </div>
         </div>
+        </div>
 
+        <div class="section" id="contact">
         <h2>連絡先</h2>
         <div>
           E-mail: ozaki.yasunori (at) outlook.com <br>
           (at)を@に変更してください。
+        </div>
         </div>
         
         
